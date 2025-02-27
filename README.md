@@ -2,13 +2,6 @@ ALTDRX
 
 Implemented a design in nextjs as a part of frontend assignment.
 
-## ✨Features
-
-- **Add User:** Add user details including username, workout duration, and workout type.
-- **Filter Workouts:** Filter and search workouts by username and workout type.
-- **View Progress:** See detailed workout progress for each user.
-- **Pagination:** Navigate through users with pagination.
-
 ## 🛠️ Tech Stack
 
 - **Frontend Framework**: [Next js](https://nextjs.org/)
