@@ -1,76 +1,50 @@
-Tech Stack
-Next.js: React framework for server-side rendering and static site generation.
+ALTDRX
 
-Tailwind CSS: Utility-first CSS framework for rapid, responsive styling.
+Implemented a design in nextjs as a part of frontend assignment.
 
-React: Component-based UI development.
+## ✨Features
 
-Vercel: Recommended deployment platform (optional).
+- **Add User:** Add user details including username, workout duration, and workout type.
+- **Filter Workouts:** Filter and search workouts by username and workout type.
+- **View Progress:** See detailed workout progress for each user.
+- **Pagination:** Navigate through users with pagination.
 
-Getting Started
-Follow these steps to set up and run the project locally.
-Prerequisites
-Node.js: Version 16.x or higher.
+## 🛠️ Tech Stack
 
-npm or yarn: Package manager of your choice.
+- **Frontend Framework**: [Next js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) for modern, utility-first styling
 
-Installation
-Clone the Repository:
-bash
+## 📋 Prerequisites
 
-git clone https://github.com/chirayu16/altdrx.git
-cd altdrx
+Before you begin, ensure you have the following installed:
+- Node.js (v18.x)
+- npm (v9.x or higher)
 
-Install Dependencies:
-Using npm:
-bash
 
-npm install
 
-Or using yarn:
-bash
+### 🚀Run Locally
 
-yarn install
+1. Clone the repository:
 
-Run the Development Server:
-bash
+   ```bash
+      git clone https://github.com/chirayu16/altdrx.git
+      cd altdrx
+   ```
 
-npm run dev
+2. Install dependencies
 
-Or:
-bash
+```bash
+   npm install
+```
 
-yarn dev
+3. Start the development server
 
-Open http://localhost:3000 in your browser to see the app in action.
+```bash
+   npm run dev
+```
 
-Build for Production
-To create an optimized build:
-bash
+4. Open your browser and navigate to:
 
-npm run build
-npm start
-
-Or:
-bash
-
-yarn build
-yarn start
-
-Project Structure
-
-altdrx/
-├── public/               # Static assets (e.g., favicon.ico, logos)
-├── components/           # Reusable React components (e.g., NavButton.js)
-├── pages/                # Next.js pages (e.g., index.js)
-├── styles/               # Global styles (if any)
-├── package.json          # Dependencies and scripts
-└── README.md             # This file
-
-Customization
-Favicon: Replace /public/favicon.ico with your custom favicon.
-
-Social Links: Update the socialLogos array in your navigation component (e.g., Nav.js) with desired URLs.
-
-Styling: Modify Tailwind classes in components or update tailwind.config.js for custom themes
-
+```
+    http://localhost:3000
+```
