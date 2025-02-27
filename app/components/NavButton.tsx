@@ -1,5 +1,10 @@
-import Image from 'next/image'; 
-export default function MiddleButton({ text, logo, className = ''  }) {
+import Image from 'next/image';
+interface NavButtonProps {
+    text?: string;
+    logo?: string; 
+    className?: string;
+  } 
+export default function NavButton({ text, logo, className = ''  }:NavButtonProps) {
     return(
         <button
       className={`flex justify-center items-center  box-border ${className}`}

@@ -14,7 +14,13 @@ export default {
         'custom-orange': '#F37529',
         'custom-brown': '#9A6351',
         'dark-gray': '#121212',
-        'btn-disabled':'#888888'
+        'light-gray':'#888888',
+        'f7-gray':'#F7F7F7',
+        'dark-blue':'#2F3192',
+        'very-light-gray':'#D1D1D1',
+        'form-gray':'#A1A1A1',
+        'form-black':'#3D3D3D',
+
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
@@ -29,6 +35,12 @@ export default {
       },
       fontSize: {
         '54-px':'54px',
+        '40-px':'40px',
+        '28-px':'28px',
+        '22-px':'22px',
+        '10-px':'10px',
+
+
       }
     },
   },
