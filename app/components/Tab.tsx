@@ -4,8 +4,10 @@ import SummaryCard from "./SummaryCard";
 import DashboardRow from "./DashboardRow";
 
 export default function Tab() {
-  const [activeTab, setActiveTab] = useState<"summary" | "dashboard">("summary");
-  
+  const [activeTab, setActiveTab] = useState<"summary" | "dashboard">(
+    "summary"
+  );
+
   const summaryContentRef = useRef<HTMLDivElement>(null);
   const dashboardContentRef = useRef<HTMLDivElement>(null);
 
@@ -34,26 +36,26 @@ export default function Tab() {
 
   const dashboardData = [
     {
-        userPhoto: '/logos/user1img1.svg',
-        userName:'Kevin P.Jones',
-        opportunity:'Mumbai Suburban Housing Investment Opportunity',
-        amt_invested:'₹ 10,000,000',
-        ref_earned:'₹24,990'
+      userPhoto: "/logos/user1img1.svg",
+      userName: "Kevin P.Jones",
+      opportunity: "Mumbai Suburban Housing Investment Opportunity",
+      amt_invested: "₹ 10,000,000",
+      ref_earned: "₹24,990",
     },
     {
-        userPhoto: '/logos/user2img.svg',
-        userName:'Kevin P.Jones',
-        opportunity:'Mumbai Suburban Housing Investment Opportunity',
-        amt_invested:'₹ 0',
-        ref_earned:'₹ 0'
+      userPhoto: "/logos/user2img.svg",
+      userName: "Kevin P.Jones",
+      opportunity: "Mumbai Suburban Housing Investment Opportunity",
+      amt_invested: "₹ 0",
+      ref_earned: "₹ 0",
     },
     {
-        userPhoto: '/logos/user2img.svg',
-        userName:'Kevin P.Jones',
-        opportunity:'Mumbai Suburban Housing Investment Opportunity',
-        amt_invested:'₹ 12,000',
-        ref_earned:'₹1,00'
-    }
+      userPhoto: "/logos/user2img.svg",
+      userName: "Kevin P.Jones",
+      opportunity: "Mumbai Suburban Housing Investment Opportunity",
+      amt_invested: "₹ 12,000",
+      ref_earned: "₹1,00",
+    },
   ];
 
   const handleTabChange = (tab: "summary" | "dashboard") => {
@@ -63,9 +65,15 @@ export default function Tab() {
   useEffect(() => {
     const scrollToContent = () => {
       if (activeTab === "summary" && summaryContentRef.current) {
-        summaryContentRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+        summaryContentRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
       } else if (activeTab === "dashboard" && dashboardContentRef.current) {
-        dashboardContentRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+        dashboardContentRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
       }
     };
 
@@ -98,10 +106,10 @@ export default function Tab() {
           <div className="absolute bottom-0 left-0 right-0 h-px bg-light-gray" />
         </div>
       </div>
-      
+
       <div className="mt-6">
-        <div 
-          ref={summaryContentRef} 
+        <div
+          ref={summaryContentRef}
           className={`flex gap-8 ${activeTab !== "summary" ? "hidden" : ""}`}
         >
           {summaryCardsData.map((card, index) => (
@@ -113,10 +121,12 @@ export default function Tab() {
             />
           ))}
         </div>
-        
-        <div 
+
+        <div
           ref={dashboardContentRef}
-          className={`flex flex-col gap-6 ${activeTab !== "dashboard" ? "hidden" : ""}`}
+          className={`flex flex-col gap-6 ${
+            activeTab !== "dashboard" ? "hidden" : ""
+          }`}
         >
           {dashboardData.map((row, index) => (
             <DashboardRow

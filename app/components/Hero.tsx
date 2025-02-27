@@ -5,7 +5,7 @@ import { useState, ChangeEvent, FormEvent } from "react";
 export default function Hero() {
   const [inputValue, setInputValue] = useState<string>("");
 
-  const isValidEmail = ():boolean => {
+  const isValidEmail = (): boolean => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(inputValue);
   };
@@ -16,7 +16,7 @@ export default function Hero() {
 
   const handleFormSubmit = (e: FormEvent) => {
     e.preventDefault();
-  }
+  };
 
   return (
     <div className="flex gap-8">
@@ -75,9 +75,7 @@ export default function Hero() {
                   className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer"
                 />
               </div>
-              <button
-                className="px-6 text-base font-medium py-2 border rounded-40-px border-custom-orange text-custom-orange"
-              >
+              <button className="px-6 text-base font-medium py-2 border rounded-40-px border-custom-orange text-custom-orange">
                 Send invite
               </button>
             </form>

@@ -49,17 +49,18 @@ export default function div() {
       <div>
         <div className="text-xs">SUBSCRIPTION</div>
         <div>
-          <form className="flex gap-2">
-            <div className="w-full">
-              <input
-                type="text"
-                value=""
-                placeholder="E-mail"
-                readOnly
-                className="border border-dark-gray rounded-40-px box-border font-inter text-lg text-dark-gray placeholder:text-dark-gray font-normal leading-7 tracking-normal py-2 pl-4  w-full h-12"
-              />
-            </div>
-          </form>
+        <form className="flex gap-2">
+  <div className="w-full relative"> 
+    <input
+      type="text"
+      placeholder="E-mail"
+      className="border border-white rounded-[40px] box-border font-inter text-base text-dark-gray placeholder:text-custom-gray font-normal leading-7 tracking-normal py-2 pl-4 pr-10 w-full h-12 bg-transparent" 
+    />
+    <span className="absolute inset-y-0 right-3 flex items-center pointer-events-none">
+      <Image src="/logos/rightarrow.svg" alt="rightarrow" width={5} height={9}></Image>
+    </span>
+  </div>
+</form>
         </div>
       </div>
       <div className="font-normal text-10-px font-inter text-very-light-gray">
@@ -90,7 +91,7 @@ export default function div() {
             </a>
             ))}
         </div>
-        <div className="font-normal text-10-px font-inter text-white opacity-40 ml-" >© 2024, ALT DRX. All Rights Reserved</div>
+        <div className="font-normal text-10-px font-inter text-white opacity-40 ml-auto" >© 2024, ALT DRX. All Rights Reserved</div>
         </div>
     </div>
   );

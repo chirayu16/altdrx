@@ -24,8 +24,8 @@ export default function Step() {
           <div className="font-inter text-lg text-custom-gray font-normal leading-7 tracking-normal ">
             Get started with a quick{" "}
             <span className="text-custom-orange">sign-up</span> and{" "}
-            <span className="text-custom-orange">KYC verification</span>{" "}
-            it’s —seamless and secure, ensuring you’re set to explore real estate
+            <span className="text-custom-orange">KYC verification</span> it’s
+            —seamless and secure, ensuring you’re set to explore real estate
             opportunities right away.
           </div>
         </div>

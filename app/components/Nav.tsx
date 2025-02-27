@@ -1,9 +1,19 @@
 import Image from "next/image";
 import NavButton from "./NavButton";
+import Link from "next/link";
+import Head from "next/head";
 export default function Nav() {
   return (
     <div className="flex justify-between gap-20">
-      <Image src="/logos/logo.svg" alt="logo" width={300} height={25} />
+      <Head>
+        <link rel="icon" href="/logos/alt-favicon.svg" />
+      </Head>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Link href="/" className="flex items-center">
+        <Image src="/logos/logo.svg" alt="logo" width={300} height={25} />
+      </Link>
       <div className="flex justify-start gap-8 font-inter font-normal text-lg text-custom-gray">
         <NavButton text="Invest" logo="/logos/arrow-down.svg" />
         <NavButton text="Opportunities" />

@@ -13,6 +13,9 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/logos/alt-favicon.svg" />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
